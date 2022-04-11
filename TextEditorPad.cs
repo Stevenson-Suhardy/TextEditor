@@ -32,7 +32,6 @@ namespace TextEditor
         bool isFileChanged = false;
         // To keep track if the file is saved or not
         bool isSaved = false;
-        bool isCut;
         int buttonNum;
 
         public TextEditorPad()
@@ -153,8 +152,16 @@ namespace TextEditor
             // If there are text inside the clipboard
             if (Clipboard.GetText() != string.Empty)
             {
-                // Append the text into the textbox
-                textBoxPad.AppendText(Clipboard.GetText());
+                if (textBoxPad.SelectedText == string.Empty)
+                {
+                    // Append the text into the textbox
+                    textBoxPad.AppendText(Clipboard.GetText());
+                }
+                else
+                {
+                    // Changes the selected text to the copied text
+                    textBoxPad.SelectedText = Clipboard.GetText();
+                }
             }
         }
         /// <summary>
