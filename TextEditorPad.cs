@@ -19,7 +19,7 @@ using System.Windows.Forms;
 
 namespace TextEditor
 {
-    public partial class TextEditorPad : Form
+    public partial class formTextEditorPad : Form
     {
         // Constant declarations
         const string defaultFileName = "Untitled.txt";
@@ -34,7 +34,7 @@ namespace TextEditor
         bool isSaved = false;
         int buttonNum;
 
-        public TextEditorPad()
+        public formTextEditorPad()
         {
             InitializeComponent();
         }

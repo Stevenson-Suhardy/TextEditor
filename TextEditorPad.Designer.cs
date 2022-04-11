@@ -1,6 +1,6 @@
 ﻿namespace TextEditor
 {
-    partial class TextEditorPad
+    partial class formTextEditorPad
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TextEditorPad));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTextEditorPad));
             this.menuStripBasic = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -208,7 +208,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.ToolTipText = "Displays information about the application  and it\'s author.";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
@@ -225,7 +225,7 @@
             this.toolTipTextEditor.SetToolTip(this.textBoxPad, "You can enter texts inside this text box.");
             this.textBoxPad.TextChanged += new System.EventHandler(this.TextBoxPad_TextChanged);
             // 
-            // TextEditorPad
+            // formTextEditorPad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +233,7 @@
             this.Controls.Add(this.textBoxPad);
             this.Controls.Add(this.menuStripBasic);
             this.MainMenuStrip = this.menuStripBasic;
-            this.Name = "TextEditorPad";
+            this.Name = "formTextEditorPad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Text Editor";
             this.Load += new System.EventHandler(this.TextEditorPad_Load);
